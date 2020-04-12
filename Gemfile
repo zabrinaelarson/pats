@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'webdrivers', '~> 4.2'
 
 gem 'pg', '~> 1.2', '>= 1.2.3'
+
+gem 'bootstrap', '~> 4.0'
