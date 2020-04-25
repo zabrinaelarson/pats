@@ -14,3 +14,13 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('dropdown-toggle').dropdown()
+});
+</script>
