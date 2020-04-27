@@ -1,5 +1,67 @@
 @import "bootstrap";
 
+@font-face {
+  font-family: 'Lobster';
+  src: url(Lobster-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Girassol';
+  src: url(Girassol-Regular.ttf) format("truetype");
+}
+
+/*
+ * Navbar
+ */
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #2a2b26;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
 
 
 /*
@@ -19,14 +81,14 @@
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: #36454f;
+  color: #2a2b26;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: #2a2b26;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -35,7 +97,7 @@
 
 .nav-masthead .active {
   color: #36454f;
-  border-bottom-color: #36454f;
+  border-bottom-color: #2a2b26;
 }
 
 @media (min-width: 48em) {
@@ -78,7 +140,7 @@
   margin-right: auto;
   margin-left: auto;
   background-color: #81AA30;
-  color: #565A53;
+  color: #2a2b26;
   padding-bottom: 15px;
 }
 
@@ -86,11 +148,12 @@
   padding-left: 15px;
   padding-right: 15px;
   font-weight: bold;
-  color: #36454f;
-}
+  color: #2a2b26;
+  }
 
-.nav-link:hover .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+.dropdown > .dropdown-item:hover .dropdown > dropdown-item:focus {
+  background-color: #648425;
+  color: black;
 }
 
 .parabackground {
@@ -112,6 +175,23 @@
   border: 5px solid #000;
 }
 
-.dropdown-menu > a {
-  
+.dropdown-menu {
+  background-color: #81AA30 !important; 
+  color: #2a2b26;
+} 
+/* the important tag is to override  bootstraps value for the dropdown menu */
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 150%;
 }
+
+.ftquote {
+  font-family: 'Girassol', cursive;
+}
+
+
+
+
+
+
