@@ -133,7 +133,7 @@
 
 .custom-header {
   max-width: 80%;
-  border: 1px solid #c3c3c3;
+  border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -188,7 +188,29 @@
 
 .ftquote {
   font-family: 'Girassol', cursive;
+  font-weight: 600;
 }
+
+.inner > .card-header {
+  font-weight: 800;
+
+}
+
+.inner > .card {
+  max-width: 80%;
+  border: 2px solid #2a2b26;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #81aa30b3;
+  color: black;
+  padding-bottom: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+}
+
 
 
 
