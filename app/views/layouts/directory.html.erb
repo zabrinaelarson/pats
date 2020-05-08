@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-    <title>P.A.T.S</title>
+    <title>Directory</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -34,7 +34,16 @@
   
         <div class="cover-container">
 
-          <%= image_tag 'skybg4.png', alt: 'Home Background', class: 'parabackground'%>
+          <%= video_tag(
+              'directorybg.mp4',
+              id: 'background',
+              autoplay: :autoplay,
+              loop: :loop,
+              muted: :muted,
+              )
+            %>
+
+          
 
           <div>
             <%= render "shared/application_nav" %>
@@ -52,5 +61,3 @@
     </div>
   </body>
 </html>
-
-

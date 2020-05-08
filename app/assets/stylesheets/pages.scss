@@ -1,18 +1,27 @@
 @import "bootstrap";
 
 @font-face {
-  font-family: 'Lobster';
-  src: url(Lobster-Regular.ttf) format("truetype");
+  font-family: 'Roboto';
+  src: url(Roboto-Italic.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Girassol';
-  src: url(Girassol-Regular.ttf) format("truetype");
+  font-family: 'Marcellus';
+  src: url(Marcellus-Regular.ttf) format("truetype");
 }
 
 /*
  * Navbar
  */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Marcellus';
+}
 
 
 .dropdown-submenu {
@@ -69,7 +78,7 @@
  */
 
 .masthead {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   position: fixed;
   top: 0;
 }
@@ -139,8 +148,8 @@
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  background-color: #81AA30;
-  color: #2a2b26;
+  background-color: #E6D494;
+  color: black;
   padding-bottom: 15px;
 }
 
@@ -148,11 +157,11 @@
   padding-left: 15px;
   padding-right: 15px;
   font-weight: bold;
-  color: #2a2b26;
+  color: Black;
   }
 
 .dropdown > .dropdown-item:hover .dropdown > dropdown-item:focus {
-  background-color: #648425;
+  background-color: #E6D494;
   color: black;
 }
 
@@ -176,18 +185,18 @@
 }
 
 .dropdown-menu {
-  background-color: #81AA30 !important; 
-  color: #2a2b26;
+  background-color: #E6D494 !important; 
+  color: black;
 } 
 /* the important tag is to override  bootstraps value for the dropdown menu */
 
 .navbar-brand {
-  font-family: 'Lobster', cursive;
+  font-family: 'Marcellus';
   font-size: 150%;
 }
 
 .ftquote {
-  font-family: 'Girassol', cursive;
+  font-family: 'Marcellus';
   font-weight: 600;
 }
 
@@ -204,12 +213,22 @@
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  background-color: #81aa30b3;
+  background-color: #ffb3e6;
   color: black;
   padding-bottom: 15px;
   text-align: center;
   box-shadow: 10px 10px 10px black;
+  padding: 35px;
 }
+
+.spacer  {
+  height: 150px;
+}
+
+.spacer2 {
+  height: 40px;
+}
+
 
 
 

@@ -1,5 +1,6 @@
 <div class="inner cover">
-	<div class="card">
+  <div class="spacer2"></div>
+	<div class="card quotecd">
 		<h1 class="cover-heading card-header ftquote">Psychological Assessments and Treatment Specialists</h1>
 		<div class="quote-card custom-card card-body">
 			<p class="lead ftquote"><b>“But oh! the blessing it is to have a [confidant] to whom one can speak fearlessly on any subject; with whom one's deepest as well as one's most foolish thoughts come out simply and safely.
@@ -8,4 +9,35 @@
 			<cite> - Dinah Maria Mulock Craik, A Life for a Life</cite>
 		</div>
 	</div>
+  <br><br><br><br>
+	<div class="card appointment-card">
+		<h1 class="cover-heading card-header ftquote">
+			Request an Appointment
+		</h1>
+		<h3 class="subtitle">For your convinence, we have the option to fill out the form below  for our staff to reach out to you. Or give us a call at 801-772-0202 </h3>
+
+    <%= form_with do |f| %>
+
+      <div class="form-group">
+        <%= f.text_field :name, class: 'form-control', placeholder: "Name:" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :email, class: 'form-control', placeholder: "Email:" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_field :phone, class: 'form-control', placeholder: "Phone:" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Is there anything you want us to know?" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit "Submit Request", class: 'btn btn-cus' %>
+      </div>
+    <% end %>
+	</div>
+  <div class="spacer"></div>
 </div>
