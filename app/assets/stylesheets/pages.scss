@@ -14,7 +14,7 @@
  */
 
 .body {
-  background-color: #eafbea;
+  background-color: #D3D3D3;
 }
 
 /*
@@ -155,7 +155,7 @@ h6, .h6 {
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  background-color: #E6D494;
+  background-color: #bab86c;
   color: black;
   padding-bottom: 15px;
 }
@@ -168,7 +168,7 @@ h6, .h6 {
   }
 
 .dropdown > .dropdown-item:hover .dropdown > dropdown-item:focus {
-  background-color: #E6D494;
+  background-color: #9ACA5E;
   color: black;
 }
 
@@ -204,11 +204,12 @@ h6, .h6 {
 }
 
 .bds {
-  border: 5px solid #000;
+  border: 2px solid #000 !important;
 }
+/* Important tag to overide transparent style from bootstrap.*/
 
-.dropdown-menu {
-  background-color: #E6D494 !important; 
+.dropdown -menu {
+  background-color: #9ACA5E !important; 
   color: black;
 } 
 /* the important tag is to override  bootstraps value for the dropdown menu */
@@ -249,20 +250,27 @@ h6, .h6 {
 }
 
 .spacer2 {
-  height: 40px;
-}
-
-.stickypos {
-  position: absolute;
+  height: 100px;
+  border-bottom: 10px dotted black;
 }
 
 nav {
-  background-color: #eafbea;
+  background-color: #D3D3D3;
 }
 
+.navbar {
+  margin-bottom: 0px !important;
+  margin: auto;
+  position: fixed !important;
+}
+/* marked as important to override margin bottom default and position put in by bootstrap*/
 
-
-
+.navpos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
 
 
 
