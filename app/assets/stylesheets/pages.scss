@@ -9,6 +9,13 @@
   font-family: 'Marcellus';
   src: url(Marcellus-Regular.ttf) format("truetype");
 }
+/*
+ * background color
+ */
+
+.body {
+  background-color: #eafbea;
+}
 
 /*
  * Navbar
@@ -141,7 +148,7 @@ h6, .h6 {
  */
 
 .custom-header {
-  max-width: 80%;
+  max-width: 90%;
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +188,20 @@ h6, .h6 {
   *background-size: cover; 
 * }
 */
+
+.parallax {
+  /* The image used */
+  background-image: url("familyhome.png");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .bds {
   border: 5px solid #000;
@@ -231,6 +252,13 @@ h6, .h6 {
   height: 40px;
 }
 
+.stickypos {
+  position: absolute;
+}
+
+nav {
+  background-color: #eafbea;
+}
 
 
 
