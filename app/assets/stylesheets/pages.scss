@@ -9,12 +9,17 @@
   font-family: 'Marcellus';
   src: url(Marcellus-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url(Alegreya-MediumItalic.ttf) format("truetype");
+}
 /*
  * background color
  */
 
 .body {
-  background-color: #D3D3D3;
+  background-color: #FFFAF1;
 }
 
 /*
@@ -148,28 +153,28 @@ h6, .h6 {
  */
 
 .custom-header {
-  max-width: 90%;
-  border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  background-color: #bab86c;
-  color: black;
+  background-color: #A9A9A9;
+  color: white;
   padding-bottom: 15px;
+  
 }
 
 .custom-header > .nav-item {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: bold;
   color: Black;
+  font-family: 'Marcellus';
   }
 
 .dropdown > .dropdown-item:hover .dropdown > dropdown-item:focus {
-  background-color: #9ACA5E;
-  color: black;
+  background-color: #808080;
+  color: white;
 }
 
 /*
@@ -203,20 +208,15 @@ h6, .h6 {
   background-size: cover;
 }
 
-.bds {
-  border: 2px solid #000 !important;
-}
-/* Important tag to overide transparent style from bootstrap.*/
-
-.dropdown -menu {
-  background-color: #9ACA5E !important; 
-  color: black;
+.dropdown-menu {
+  background-color: #A9A9A9 !important; 
+  color: white;
 } 
 /* the important tag is to override  bootstraps value for the dropdown menu */
 
 .navbar-brand {
   font-family: 'Marcellus';
-  font-size: 150%;
+  font-weight: 600;
 }
 
 .ftquote {
@@ -250,8 +250,7 @@ h6, .h6 {
 }
 
 .spacer2 {
-  height: 100px;
-  border-bottom: 10px dotted black;
+  height: 150px;
 }
 
 nav {
@@ -262,7 +261,7 @@ nav {
   margin-bottom: 0px !important;
   margin: auto;
   position: fixed !important;
-}
+} 
 /* marked as important to override margin bottom default and position put in by bootstrap*/
 
 .navpos {
@@ -273,4 +272,62 @@ nav {
 }
 
 
+.navbar-light .navbar-nav .active > .nav-link {
+  font-family: 'Marcellus';
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
 
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Marcellus';
+  font-weight: 600;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.quote {
+  border-bottom: 10px solid black
+}
+
+.dropdown-menu > li > a {
+  font-family: 'Marcellus' !important;
+  font-weight: 600  !important;
+  color: black;
+}
+ 
+ /* marked as important to override font weight and and family put in by bootstrap*/
+
+.dropdown-submenu > .dropdown-menu {
+  left: -100%;
+}
+
+.navbar-light .navbar-brand {
+  margin-left: 100px;
+}
+
+.navbar-light > .navbar-collapse {
+  margin-right: 100px;
+}
+
+.quote-card {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  align-text: center;
+}
+
+.quotehead {
+  min-width: 80%;
+  float: right;
+
+}
+
+.card-header {
+  background: transparent; 
+}
