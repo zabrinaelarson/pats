@@ -19,7 +19,7 @@
  */
 
 .body {
-  background-color: #FFFAF1;
+  background-color: #FFFAF1; 
 }
 
 /*
@@ -177,32 +177,15 @@ h6, .h6 {
   color: white;
 }
 
-/*
-*.parabackground {
-*  position: fixed;
- * top: 50%;
-  *left: 50%;
-  *min-width: 100%;
-  *min-height: 100%;
-  *width: auto;
-  *height: auto;
-  *z-index: -100;
-  *-webkit-transform: translateX(-50%) translateY(-50%);
-  *transform: translateX(-50%) translateY(-50%);
-  *background: image-url('goldbg.png') no-repeat;
-  *background-size: cover; 
-* }
-*/
 
-.parallax {
+.appt-card {
   /* The image used */
   background-image: url("familyhome.png");
 
   /* Set a specific height */
   height: 500px;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* Create the fixed page wide scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,4 +345,58 @@ nav {
 .customqt {
   color: gray !important;
   margin-right: 0px !important;
+}
+
+.appointment-card {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cover-heading {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 200;
+  max-width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  min-width: 1100px;
+}
+
+.custformalign {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.frontfooter {
+  height: 300px;
+
+  /* Create the fixed page wide scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#custftfooter {
+  max-height: 100px;
+  min-width: 100%;
 }

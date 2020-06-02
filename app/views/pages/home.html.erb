@@ -9,36 +9,52 @@
   <div class="quoteauthor">
     <p><footer class="blockquote-footer"><cite title="Dinah Maria Mulock Craik"><a href="https://www.goodreads.com/work/quotes/884170-a-life-for-a-life", target="blank"><span class="customqt">Dinah Maria Mulock Craik in <b>A Life for a Life</b></span></a></cite></footer></p>
   </div>
-  <div class="parallax"></div>
+  <div class="appt-card"></div>
   <br><br><br><br> 
-	<div class="appointment-card">
-		<h1 class="cover-heading">
-			Request an Appointment
-		</h1>
-		<h3 class="subtitle">For your convinence, we have the option to fill out the form below  for our staff to reach out to you. Or give us a call at 801-772-0202 </h3>
+	  <div class="appointment-card">
+      <div class="custcardheader">
+        <h1 class="cover-heading">
+			    <b>Request an Appointment</b>
+		    </h1>
+        <h3 class="subtitle">
+          <b>For your convinence, we have the option to fill out the form below  for our staff to reach out to you. Or give us a call at 801-772-0202.</b> 
+        </h3>
+      </div> 
+      <br><br><br><br>
+      <div class="custformalign">
+        <%= form_with do |f| %>
+          <div class="form-group btn-block">
+            <%= f.text_field :name, class: 'form-control', placeholder: "Name:" %>
+          </div>
 
-    <%= form_with do |f| %>
+          <div class= "form-group btn-block">
+            <%= f.text_field :email, class: 'form-control', placeholder: "Email:" %>
+          </div>
 
-      <div class="form-group">
-        <%= f.text_field :name, class: 'form-control', placeholder: "Name:" %>
+          <div class="form-group  btn-block">
+            <%= f.text_field :phone, class: 'form-control', placeholder: "Phone:" %>
+          </div>
+
+          <div class="form-group btn-block">
+            <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Is there anything you want us to know?" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.submit "Submit Request", class: 'btn btn-cus btn-block' %>
+          </div>
+      
+        <% end %>
       </div>
-
-      <div class="form-group">
-        <%= f.text_field :email, class: 'form-control', placeholder: "Email:" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.text_field :phone, class: 'form-control', placeholder: "Phone:" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Is there anything you want us to know?" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.submit "Submit Request", class: 'btn btn-cus' %>
-      </div>
-    <% end %>
+    </div>
 	</div>
-  <div class="spacer"></div>
+  <div class="frontfooter">
+    <%= video_tag(
+      'footerft.mp4',
+      id: 'custftfooter',
+      autoplay: :autoplay,
+      loop: :loop,
+      muted: :muted,
+      )
+    %>
+  </div>
 </div>
