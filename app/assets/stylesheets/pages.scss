@@ -20,12 +20,14 @@
 
 .body {
   background-color: #FFFAF1; 
+  text-align: center; 
+  font-weight: bolder !important;
 }
 
 /*
  * Navbar
  */
-
+ 
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -97,7 +99,7 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
-}
+} 
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -388,15 +390,49 @@ nav {
 }
 
 .frontfooter {
-  height: 300px;
-
-  /* Create the fixed page wide scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d3d3d3;
+  color: black;
+  align: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #custftfooter {
   max-height: 100px;
   min-width: 100%;
+}
+
+.custombutton {
+  background-color: #A9A9A9;
+  color: black; 
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 20%;
+}
+
+.ftbuttonplacement {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.btn-cus {
+  background-color: #A9A9A9;
+  color: black; 
+  min-width: 20%;
+}
+
+.alignbtn > .btn {
+  margin: 30px;
+  font-weight: 600;
+  height: 45px;
+}
+
+.design-layout-overlap .image-button-wrapper {
+  margin-right: auto;
+  font-size: 75px;
+  font-weight: 800;
+  background: rgb(248,247,254);
+  background: linear-gradient(90deg, rgba(248,247,254,1) 47%, rgba(223,222,226,1) 74%, rgba(184,181,181,1) 100%);
 }

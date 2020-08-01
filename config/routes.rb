@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'resources/new'
+  get 'resources/billing'
+  get 'resources/faqs'
+  get 'resources/library'
+  get 'directory/directory'
+  get 'directory/eaglemountain'
+  get 'directory/americanfork'
 	root 'pages#home'
 
 
