@@ -11,9 +11,16 @@
 }
 
 @font-face {
-  font-family: 'Alegreya';
-  src: url(Alegreya-MediumItalic.ttf) format("truetype");
+  font-family: 'Roboto Italic';
+  src: url(Roboto-Italic.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: 'IM Fell French Canon SC';
+  src: url(IMFellFrenchCanonSC-Regular.ttf) format("truetype");
+}
+
+
 /*
  * background color
  */
@@ -435,4 +442,92 @@ nav {
   font-weight: 800;
   background: rgb(248,247,254);
   background: linear-gradient(90deg, rgba(248,247,254,1) 47%, rgba(223,222,226,1) 74%, rgba(184,181,181,1) 100%);
+}
+
+/*
+ * Directory 
+ */
+
+.directheaders {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: 500;
+  font-size: 500%;
+  max-width: 65%; 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.headeroverride {
+  border: transparent !important;
+}
+
+.eaglemtdircard {
+  background: rgb(244,244,245);
+  background: linear-gradient(90deg, rgba(244,244,245,1) 16%, rgba(223,222,226,1) 54%, rgba(150,149,149,1) 100%);
+  max-width: 80%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25% 10%;
+  float: left;
+}
+
+.amfkdircard {
+  background: rgb(112,112,115);
+  background: linear-gradient(90deg, rgba(112,112,115,1) 24%, rgba(223,222,226,1) 67%, rgba(244,244,245,1) 100%);
+  max-width: 80%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10% 25%;
+  float: right;
+}
+
+.egmtcardimg {
+  z-index: -1;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.amfkcardimg {
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.egmtcardheader {
+  font-weight: 1000;
+  color: white;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 500%;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 10px black;
+  padding: 5px;
+  min-width: 200% !important;
+  text-align: left;
+  margin-left: -200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
+  background-color: #8bb367ba;
+}
+
+.amfkcardheader {
+  font-weight: 1000;
+  color: white;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 500%;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 10px black;
+  padding: 10px;
+  min-width: 200% !important;
+  text-align: left;
+  margin-left: -200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
+  background-color: #8bb367ba;
+  position: relative;
+  z-index: 1;
+}
+
+.custarea {
+  width: 100%;
 }
