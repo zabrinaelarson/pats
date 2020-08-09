@@ -316,7 +316,7 @@ nav {
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
+  text-align: center; 
 }
 
 .quotehead {
@@ -404,19 +404,24 @@ nav {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+
 }
 
 #custftfooter {
   max-height: 100px;
   min-width: 100%;
+  border-width: 4px;       
+  border-top-style: solid;
 }
 
 .custombutton {
-  background-color: #A9A9A9;
+  background-color: #8bb367ba;
   color: black; 
   margin-left: auto;
   margin-right: auto;
   min-width: 20%;
+  border: 1px solid black !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
 }
 
 .ftbuttonplacement {
@@ -425,9 +430,14 @@ nav {
 }
 
 .btn-cus {
-  background-color: #A9A9A9;
+  background-color: #8bb367ba;
   color: black; 
   min-width: 20%;
+  border: 1px solid black !important;
+  font-weight: 500px;
+  text-spacing: 4px; 
+  font-size: 30px;
+  box-shadow: 5px 5px 20px black;
 }
 
 .alignbtn > .btn {
@@ -468,11 +478,13 @@ nav {
 .eaglemtdircard {
   background: rgb(244,244,245);
   background: linear-gradient(90deg, rgba(244,244,245,1) 16%, rgba(223,222,226,1) 54%, rgba(150,149,149,1) 100%);
-  max-width: 80%;
+  max-width: 80%;  
   margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 25% 10%;
+  border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px 15px black;
+  border: 1px solid black;
 }
 
 .amfkdircard {
@@ -481,19 +493,22 @@ nav {
   max-width: 80%;
   margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 10% 25%;
+  border-radius: 10px;
   float: right;
+  box-shadow: 5px 5px 15px black;
 }
 
 .egmtcardimg {
   z-index: -1;
-  border-radius: 10%;
+  border-radius: 10px;
   border: 1px solid black;
+  box-shadow: 5px 5px 20px black;
 }
 
 .amfkcardimg {
-  border-radius: 10%;
+  border-radius: 10px;
   border: 1px solid black;
+  box-shadow: 5px 5px 20px black;
 }
 
 .egmtcardheader {
@@ -504,11 +519,12 @@ nav {
   letter-spacing: 4px;
   text-shadow: 4px 4px 10px black;
   padding: 5px;
-  min-width: 200% !important;
+  min-width: 200%  !important;
   text-align: left;
   margin-left: -200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
   background-color: #8bb367ba;
+  border-radius: 10px;
 }
 
 .amfkcardheader {
@@ -526,8 +542,41 @@ nav {
   background-color: #8bb367ba;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 
-.custarea {
-  width: 100%;
+.egaddressbox {
+  text-align: center;
+  font-weight: bolder; 
+  color: black;
+  font-size: 200%;
+}
+
+.egaddressbox > p {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: bolder;
+}
+
+.afaddressbox {
+  text-align: center;
+  font-weight: 500; 
+  color: black;
+  font-size: 200%;
+}
+
+.afaddressbox > p {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: bolder;
+}
+
+.btncustdir {
+  background-color: #8bb367ba;
+  color: white;
+  border: 2px solid black !important;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 5px 20px black;
 }
