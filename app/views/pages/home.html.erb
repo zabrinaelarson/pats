@@ -9,8 +9,43 @@
   <div class="quoteauthor">
     <p><footer class="blockquote-footer"><cite title="Dinah Maria Mulock Craik"><a href="https://www.goodreads.com/work/quotes/884170-a-life-for-a-life", target="blank"><span class="customqt">Dinah Maria Mulock Craik in <b>A Life for a Life</b></span></a></cite></footer></p>
   </div>
-  <div class="appt-card"></div>
+  <div class="subbiz">
+
+    <div class="card subbizcard">
+      <%= image_tag("ftkidscard.jpg", :alt => "Child Evaluation Subbiz Image", :class => "card-img-top") %>
+      <div class="card-body">
+          <%= image_tag("Child Evaluation & Treatment Center.png", :alt => "Child Evalualtion and Treatment Center Logo", :class => "subbiztitles") %>
+        <p class="card-text"><b>Child Evaluation & Treatment Center (CETC)</b>- counselors have specialized training and experience working with children of all ages, from the three-year old with out-of-control temper tantrums to the teenager struggling with depression and low self-esteem. Our services include sessions for individuals, for parents, or for both together.</p>
+      </div>
+      <div class="card-body subbizlinks cecustlink">
+        <a href="#" class="card-link">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card subbizcard">
+      <%= image_tag("ftfamilycard.jpg", :alt => "Family and Marriage Subbiz Image", :class => "card-img-top") %>
+      <div class="card-body">
+          <%= image_tag("Marriage & Family Relations Center.png", :alt => "Marriage & Family Relations Center Logo", :class => "subbiztitles") %>
+        <p class="card-text"><b>The  Marriage & Family Relations Center (MFRC)</b>- reaches out to couples and families in crisis. Whether your marriage simply needs a few adjustments or is falling apart, the quicker you get help the sooner your relationship will begin to heal.</p>
+      </div>
+      <div class="card-body subbizlinks">
+        <a href="#" class="card-link">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card subbizcard">
+      <%= image_tag("ftdepressioncard.jpg", :alt => "Mental Illness Subbiz Image", :class => "card-img-top") %>
+      <div class="card-body">
+          <%= image_tag("Depression & Anxiety Treatment Center.png", :alt => "Depression Center Logo", :class => "subbiztitles") %>
+        <p class="card-text"><b>The Depression & Anxiety Disorders Treatment Center (DADTC)</b>- offers clinically sound interventions that target the reduction of symptoms of both acute and chronic disorders. Whether due to genetic or psychological factors, those who suffer from mood and anxiety disorders often suffer in silence.</p>
+      </div>
+      <div class="card-body subbizlinks">
+        <a href="#" class="card-link">Learn More</a>
+      </div>
+    </div>
+  </div>
   <br><br><br><br> 
+  <div class="appt-card"></div>
   <div class="alignbtn design-layout-overlap"> 
     <div class="image-button-wrapper">
       New Locations!
@@ -28,29 +63,31 @@
         </h3>
       </div> 
       <br><br><br><br>
-      <div class="custformalign">
-        <%= form_with do |f| %>
-          <div class="form-group btn-block box-shadow">
-            <%= f.text_field :name, class: 'form-control', placeholder: "Name:" %>
-          </div>
+      <div class="formcontainer">
+        <div class="custformalign">
+          <%= form_with do |f| %>
+            <div class="form-group btn-block">
+              <%= f.text_field :name, class: 'form-control custformbox', placeholder: "Name:" %>
+            </div>
 
-          <div class= "form-group btn-block box-shadow"">
-            <%= f.text_field :email, class: 'form-control', placeholder: "Email:" %>
-          </div>
+            <div class= "form-group btn-block">
+              <%= f.text_field :email, class: 'form-control custformbox', placeholder: "Email:" %>
+            </div>
 
-          <div class="form-group  btn-block box-shadow"">
-            <%= f.text_field :phone, class: 'form-control', placeholder: "Phone:" %>
-          </div>
+            <div class="form-group  btn-block">
+              <%= f.text_field :phone, class: 'form-control custformbox', placeholder: "Phone:" %>
+            </div>
 
-          <div class="form-group btn-block box-shadow"">
-            <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Is there anything you want us to know?" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.submit "Submit Request", class: 'btn btn-cus btn-block' %>
-          </div>
-      
-        <% end %>
+            <div class="form-group btn-block custformbox">
+              <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Is there anything you want us to know?" %>
+            </div>
+   
+            <div class="form-group">
+              <%= f.submit "Submit Request", class: 'btn btn-cus btn-block apptsubmit' %>
+            </div>
+        
+          <% end %>
+        </div>
       </div>
     </div>
 	</div>
