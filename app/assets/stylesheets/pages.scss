@@ -357,11 +357,12 @@ nav {
   margin-right: 0px !important;
 }
 
-.appointment-card {
+.custcardheader {
+  max-width: 65%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .cover-heading {
@@ -371,6 +372,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .subtitle {
