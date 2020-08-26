@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'paperwork/billing'
+  get 'paperwork/faqs'
+  get 'paperwork/library'
   get 'resources/new'
   get 'resources/billing'
   get 'resources/faqs'

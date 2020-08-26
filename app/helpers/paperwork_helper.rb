@@ -1,0 +1,2 @@
+module PaperworkHelper
+end

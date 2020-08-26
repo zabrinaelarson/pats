@@ -549,6 +549,7 @@ nav {
   float: left;
   box-shadow: 5px 5px 15px black;
   border: 1px solid black;
+  margin-left: 20px;
 }
 
 .amfkdircard {
@@ -560,10 +561,10 @@ nav {
   border-radius: 10px;
   float: right;
   box-shadow: 5px 5px 15px black;
+  margin-right: 20px !important; 
 }
 
 .egmtcardimg {
-  z-index: -1;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 5px 5px 20px black;
@@ -582,9 +583,9 @@ nav {
   font-size: 500%;
   letter-spacing: 4px;
   text-shadow: 4px 4px 10px black;
-  padding: 5px;
+  padding: 10px;
   min-width: 200%  !important;
-  text-align: left;
+  text-align: right;
   margin-left: -200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
   background-color: #8bb367ba;
@@ -599,7 +600,7 @@ nav {
   letter-spacing: 4px;
   text-shadow: 4px 4px 10px black;
   padding: 10px;
-  min-width: 200% !important;
+  min-width: 250% !important;
   text-align: left;
   margin-left: -200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.69), 0 6px 20px 0 #0e0a0a;
@@ -635,7 +636,7 @@ nav {
 
 .btncustdir {
   background-color: #8bb367ba;
-  color: white;
+  color: black;
   border: 2px solid black !important;
   text-align: center;
   border-radius: 10px;
@@ -643,6 +644,8 @@ nav {
   position: relative;
   z-index: 1;
   box-shadow: 5px 5px 20px black;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .custformbox {
@@ -658,4 +661,11 @@ nav {
   color: black !important;
   font-weight: 400px !important;
   font-size: larger !important;
+}
+
+.directcardcontainer > .custarea {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
