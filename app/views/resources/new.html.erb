@@ -1,2 +1,32 @@
-<h1>Resources#new</h1>
-<p>Find me in app/views/resources/new.html.erb</p>
+<div class="newpt">
+	<div class="custcardheader">
+    	<h1 class="cover-heading">
+			<b>New Patient Paperwork</b>
+		</h1>
+     	<h3 class="subtitle">
+        	<b>Welcome to our Practice! We're here to help, which center will you be joining us with?</b> 
+    	</h3>
+    </div> 
+	<div class="subbcards">
+		<div class="card newptppw">
+			<%= image_tag("ftkidscard.jpg", :alt => "Child Evaluation Subbiz Image", :class => "card-img-top") %>
+  			<div class="card-body"> 
+    			<%= image_tag("Child Evaluation & Treatment Center.png", :alt => "Child Evalualtion and Treatment Center Logo", :class => "subbiztitles", :style => "width: 100%;") %>
+    		</div>
+		</div>
+
+		<div class="card newptppw">
+			<%= image_tag("ftfamilycard.jpg", :alt => "Family and Marriage Subbiz Image", :class => "card-img-top") %>
+  			<div class="card-body"> 
+    			<%= image_tag("Marriage & Family Relations Center.png", :alt => "Marriage & Family Relations Center Logo", :class => "subbiztitles", :style => "width: 100%;") %>
+    		</div>
+		</div>
+
+		<div class="card newptppw">
+			<%= image_tag("ftdepressioncard.jpg", :alt => "Mental Illness Subbiz Image", :class => "card-img-top") %>
+  			<div class="card-body"> 
+    			<%= image_tag("Depression & Anxiety Treatment Center.png", :alt => "Depression Center Logo", :class => "subbiztitles", :style => "width: 100%;") %>
+    		</div>
+		</div>
+	</div>
+</div>

@@ -669,3 +669,36 @@ nav {
   margin-right: auto;
   margin-left: auto;
 }
+
+/*
+ * Resources 
+ */
+
+.newptppw {
+  width: 30%;
+  background-color: #D3D3D3;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px black;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.newpt > .subbcards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subbcards > .newptppw {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newpt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
